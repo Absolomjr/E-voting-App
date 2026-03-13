@@ -6,7 +6,9 @@ import json
 import os
 import time
 import sys
-
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 if sys.platform == "win32":
     os.system("")
